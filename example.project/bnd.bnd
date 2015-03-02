@@ -1,6 +1,7 @@
--buildpath: biz.aQute.bnd.annotation
-Bundle-Version: 3.0.0.${tstamp}
+-buildpath: \
+	biz.aQute.bnd.annotation, \
+	example.api.one;version=latest, \
+	example.api.two;version=latest
+	
+Bundle-Version: 5.0.0.${tstamp}
 Export-Package: example.project
-
--fixupmessages: ${ext.fixups.-fixupmessages}, \
-	'must be at least 4.0.0'

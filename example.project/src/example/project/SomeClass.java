@@ -1,14 +1,11 @@
 package example.project;
 
+import example.api.one.OneType;
+import example.api.two.TwoType;
+
 public class SomeClass {
 	
-	int someMethod()
-	{
-		int a = 5;
-		
-		a++;
-		
-		return a;
-	}
+	OneType one;
+	TwoType two;
 
 }
