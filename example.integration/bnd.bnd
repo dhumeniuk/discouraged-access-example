@@ -1,0 +1,21 @@
+-buildpath: \
+	osgi.core;version='[4.2,5)',\
+	osgi.cmpn,\
+	${junit},\
+	biz.aQute.bndlib
+    
+-runbundles: \
+	biz.aQute.bndlib,\
+	org.apache.felix.log,\
+	org.apache.felix.gogo.shell,\
+	org.apache.felix.gogo.command,\
+	org.apache.felix.gogo.runtime
+    
+-runee: JavaSE-1.7
+-runfw: org.apache.felix.framework
+-runsystempackages: sun.reflect
+-runvm: -ea
+-runtrace: true
+Bundle-Version: 0.0.0.${tstamp}
+Private-Package: example.integration
+Test-Cases: ${classes;CONCRETE;EXTENDS;junit.framework.TestCase}

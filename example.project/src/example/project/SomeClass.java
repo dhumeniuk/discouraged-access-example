@@ -7,5 +7,13 @@ public class SomeClass {
 	
 	OneType one;
 	TwoType two;
+	
+	int[] a = new int[0];
+	
+	void func() {
+		for (int b : a) {
+			
+		}
+	}
 
 }
